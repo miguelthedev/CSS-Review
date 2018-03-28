@@ -26,6 +26,13 @@ body {
   font-weight: 700;
   color: #0e4f1f;
   font-size: 22px;
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+}
+
+.main-header__brand img {
+  width: 100%;
 }
 
 .main-nav {
