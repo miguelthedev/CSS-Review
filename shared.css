@@ -2,14 +2,9 @@
   box-sizing: border-box;
 }
 
-html {
-  /* height: 100%; */
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  /* height: 100%;   */
 }
 
 .backdrop {
@@ -26,8 +21,10 @@ body {
 .main-header {
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: #2ddf5c;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   z-index: 1;
   top: 0;
 }
