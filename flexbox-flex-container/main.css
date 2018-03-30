@@ -18,14 +18,13 @@ body {
     background: white;
     padding: 10px;
     border: 5px solid black;
+    height: 1300px;    
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     /* flex-flow: row wrap; */
     align-items: center;
-    height: 800px;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
 }
 
 .item-1 {
@@ -52,7 +51,7 @@ body {
     padding: 10px;
     border: 5px solid black;
     margin: 10px;
-    height: 250px;
+    height: 250px; 
 }
 
 .item-4 {
@@ -72,6 +71,8 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    flex-basis: 300px;
+    flex-shrink: 0;
 }
 
 .item-6 {
@@ -81,4 +82,5 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    flex-shrink: 0;    
 }
