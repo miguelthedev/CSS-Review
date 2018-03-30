@@ -35,11 +35,14 @@
   padding: 1rem;
   margin: 0.5rem 0;
   width: 100%;
+  height: 28rem;
 }
 
 .plan--highlighted {
   background: #19b84c;
   color: #fff;
+  height: 30rem;
+  z-index: 50;
 }
 
 .plan__annotation {
@@ -79,15 +82,17 @@
 @media (min-width: 40rem) {
   .plan-list {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .plan {
-    display: inline-block;
     width: 30%;
     min-width: 13rem;
     max-width: 25rem;
-    vertical-align: middle;
-    /* margin: 0.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .plan--highlighted {
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,.2);
@@ -109,7 +114,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .key-feature__image {
@@ -131,10 +137,8 @@
 
 @media (min-width: 40rem) {
   .key-feature {
-    display: inline-block;
     width: 30%;
     max-width: 25rem;
-    vertical-align: top;
   }
 }
 
