@@ -45,6 +45,10 @@ main {
   overflow: hidden;
 }
 
+.package:hover {
+  animation: levitate 1s ease-out;  
+}
+
 .package:hover,
 .package:active {
   box-shadow: 2px 2px 4px rgba(0,0,0,.3);
@@ -127,5 +131,17 @@ main {
   }
   #free {
     border: 4px solid #0e4f1f;
+  }
+}
+
+@keyframes levitate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2rem);
+  }
+  100%{
+    transform: translateY(0);
   }
 }

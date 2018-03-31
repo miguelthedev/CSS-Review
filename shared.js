@@ -6,6 +6,8 @@ var noButton = document.querySelector('.modal button');
 var toggleButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
 
+var ctaBtn = document.querySelector('.main-nav__item--cta');
+
 for(var i = 0; i < selectPlanButton.length; i++) {
   selectPlanButton[i].addEventListener('click', function(e) {
     e.preventDefault();
@@ -42,4 +44,16 @@ toggleButton.addEventListener('click', function(e) {
   setTimeout(function() {
     backdrop.classList.add('open');
   }, 10)
+});
+
+ctaBtn.addEventListener('animationstart', function(e) {
+  console.log('Animation started.', e);
+});
+
+ctaBtn.addEventListener('animationend', function(e) {
+  console.log('Animation ended.', e);
+});
+
+ctaBtn.addEventListener('animationiteration', function(e) {
+  console.log('Animation iteration.', e);
 });
