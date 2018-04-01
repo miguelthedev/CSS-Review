@@ -1,0 +1,6 @@
+$colors: (main: #521751, secondary: #fa923f);
+$size-default: 1rem;
+$size-small: 0.2rem;
+$light-background: lighten(map-get($colors, main), 75%);
+$default-shadow: $size-small $size-small $size-small * 2 #ccc;
+$border-default: 0.05rem solid map-get($colors, main);
